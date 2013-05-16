@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://h.fanapp.mobi/insieme_per_agrate_app -->
+<html class="ui-mobile"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!--<base href="http://h.fanapp.mobi/insieme_per_agrate_app">--><base href=".">
+         <script type="text/javascript" async="" src="./index_files/ga.js"></script><script type="application/javascript">
+	//global variable definitions that are convenient to have on each page
+	window.console && console.log("using vars copy: insieme_per_agrate_app-vars - cached");
+	var generated = "2013-05-15 10:21:34";
+	var config_file_url = "http://files.infinitemonkeys.mobi/userfiles/insieme_per_agrate_app-var2.json";
+	window.console && console.log("config file: " + config_file_url + " - - " + generated);
+	window.console && console.log("last fetched: 1368712998");
+	
+	
+	var app_name = "insieme_per_agrate_app";
+	var app_userID = "a980bd17-eb2f-41f6-bb6a-41c8f09dc99b";
+	window.console && console.log("app_userID: " + app_userID);
+	var preview = "0";
+	var published = "1";
+	
+	var app_title = "Insieme per Agrate";
+	var show_title = "true";
+	var col_back = "#fdfdfd";
+	var col_text = "#000000";
+	var col_title = "#000055";
+	var bg_opacity = "0.50";
+	var icon_scale = "1.2";
+	
+	var ads_on = "1";
+	
+	var fid = "175047";
+	var home_link = "/index.php?app=insieme_per_agrate_app";
+	
+	var userfiles_path = "http://files.infinitemonkeys.mobi/userfiles/";
+	
+</script>
+<meta name="viewport" content="initial-scale=1.0,maximum-scale=1, user-scalable=no">
+<link rel="apple-touch-icon" href="http://files.infinitemonkeys.mobi/userfiles/100210231-icon.jpg">	        <meta charset="utf-8">
+        <meta name="description" content="Alleanza di Centrosinistra">
+        <meta name="keywords" content="agrate brianza,agrate,centrosinistra,politica,insieme per agrate">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        
+        <meta name="wot-verification" content="8069a6211313e4b1dcab">
+        
+        <!-- added by david hoare to force refresh of index page each time  -->
+        <meta http-equiv="Expires" content="Mon, 26 Jul 1997 05:00:00 GMT">
+        <meta http-equiv="Cache-Control" content="no-cache">
+        <meta http-equiv="Pragma" content="no-cache">
+		<meta name="viewport" content="initial-scale=1.0,maximum-scale=1, user-scalable=no">
+		
+        <title>Insieme per Agrate</title>
+        
+        <!-- browser detection		 -->
+       	<link href="./index_files/browser-detection.css" rel="stylesheet" type="text/css" media="screen">
+		<script type="text/javascript" src="./index_files/browser-detection.js"></script>
+        
+<!--         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" /> -->
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css"> 
+        <link rel="stylesheet" type="text/css" href="./index_files/jquery.mobile.scrollview.css">
+        <!--our custom or overridden styles-->
+        <link rel="stylesheet" type="text/css" href="./index_files/style.css">
+		
+        <!--jq-mobile scripts-->
+        <script src="./index_files/jquery-1.8.3.min.js"></script>
+<!--         <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script> -->
+        <script src="./index_files/jquery.mobile-1.2.0.min.js"></script>
+		
+		
+        <!--Script for fancy box--->
+<!--         <script type="text/javascript" src="./fancybox/jquery.mousewheel-3.0.4.pack.js"></script> -->
+        <script type="text/javascript" src="./index_files/jquery.fancybox.pack.js"></script>
+        <link rel="stylesheet" type="text/css" href="./index_files/jquery.fancybox.css" media="screen">
+        
+        <!--custom functions--->
+        <script type="text/javascript" src="./index_files/functions.js"></script>
+        <script type="text/javascript" src="./index_files/update.js"></script>
+
+        <script type="text/javascript">
+        
+				//added by David Hoare for frame background formatting
+			function hexToRGB(h){
+				var h = (h.charAt(0)=="#") ? h.substring(1,7):h;
+				var rgb = parseInt(h.substring(0,2),16);
+				rgb += "," + parseInt(h.substring(2,4),16);
+				rgb += "," + parseInt(h.substring(4,6),16);
+				return rgb
+			}
+			//end added
+			
+			function getCookie(c_name)
+			{
+				var i,x,y,ARRcookies=document.cookie.split(";");
+				for (i=0;i<ARRcookies.length;i++)
+				{
+					x=ARRcookies[i].substr(0,ARRcookies[i].indexOf("="));
+					y=ARRcookies[i].substr(ARRcookies[i].indexOf("=")+1);
+					x=x.replace(/^\s+|\s+$/g,"");
+					if (x==c_name)
+					{
+						return unescape(y);
+					}
+				}
+			}
+			
+			$(document).ready(function() {
+				
+				$(".various1").fancybox({
+					beforeLoad : function() {
+				        window.console && console.log("opening menu");
+				        return;
+				    }
+				});
+			
+			
+				//if the app is UNPUBLISHED - then redirect to error page:
+				if(published == false){
+					window.console && console.log("Unpublished app - redirecting: " + published);
+					document.location.href='unpublished.php?app='+app_name + "&email=" + "info@insiemeperagrate.it&url="+encodeURI(document.location.href);
+				}else{
+					window.console && console.log("published app - continuing: " + published);
+				}
+				
+				
+				
+				//title image
+				var app_image = "http://files.infinitemonkeys.mobi/userfiles/"+app_name+"-title.png";
+				if(preview == 1){
+					app_image += "?random="+Math.random().toString(36).substr(2, 5);
+				}
+				$("#homeimage").attr("src",app_image);
+				$("#homesubtitle").html("Alleanza di Centrosinistra").css("color",col_title);
+
+				//hide titles if needed
+				if(show_title == 'false'){
+					$("#homeimage").css("display", "none");
+					$("#homesubtitle").css("display", "none");
+				}
+
+				
+				// Set background image for site
+				path = "http://files.infinitemonkeys.mobi/userfiles";
+				$('#content').css("background-image", "url("+path+"/"+"100210231-background.jpg"+")");
+				
+				
+				//grid variables
+				var cols = 16;
+				var rows = 16;
+				var mods_across = 5;
+				//the total number of modules you could fit tightly side-by-side
+				var mods_down = 5;
+				//the total number of modules you could fit tightly side-by-side
+				
+				var pages = jQuery.parseJSON("{\"175011\":{\"on\":true,\"name\":\"custom_content\",\"title\":\"Chi siamo\",\"icon\":\"100210231-175011-moduleicon.jpg\",\"order\":\"2\",\"image\":\"100210231-175011-background.jpg\",\"data\":{\"custom_content\":\"PHA+TGEgbm9zdHJhIGxpc3RhIGhhIGxlIHN1ZSByYWRpY2kgbmVsIDE5OTcgcXVhbmRvIGxlIGR1ZSBhbmltZSBkZWwgY2VudHJvc2luaXN0cmEgQWdyYXRlc2UgJm5kYXNoOyAmbGRxdW87TGlzdGEgY2l2aWNhIHBlciBBZ3JhdGUmcmRxdW87IGUgJmxkcXVvO0luc2llbWUgcGVyIHZpdmVyZSBBZ3JhdGUmcmRxdW87ICZuZGFzaDsgZm9ydGkgZGVsbCZyc3F1bztlc3BlcmllbnphIGZhdHRhIGxhdm9yYW5kbyBpbnNpZW1lIGEgc29zdGVnbm8gZGVsbCZyc3F1bztVbGl2bywgZGVjaXNlcm8gZGkgaW50cmFwcmVuZGVyZSBhIGxpdmVsbG8gbG9jYWxlIHVuIHBlcmNvcnNvIGNoZSBhdnJlYmJlIHBvcnRhdG8gYWQgdW4gcHJvZ2V0dG8gYW1taW5pc3RyYXRpdm8gY29tdW5lLiBOZWwgMTk5OSBjaSBwcmVzZW50YW1tbyB1bml0aSBjb24gaWwgc2ltYm9sbyAmbGRxdW87SW5zaWVtZSBwZXIgQWdyYXRlJnJkcXVvOyBlIGNvbiB1biBwcm9nZXR0byBpbm5vdmF0aXZvIHBlciBpbCBwYWVzZSBvdHRlbmVuZG8gaWwgY29uc2Vuc28gZGVsbGEgcG9wb2xhemlvbmUgY29uZmVybWF0byBwb2kgbmVsIDIwMDQuPC9wPgo8cD5MYSBub3N0cmEgZXNwZXJpZW56YSBoYSByYWNjb2x0byBlbmVyZ2llIGUgY29udHJpYnV0aSBhbCBkaSBsJmFncmF2ZTsgZGVsbGUgZm9yemUgZGVsIGNlbnRyb3NpbmlzdHJhLiBEb25uZSBlZCB1b21pbmkgY2hlIHNpIHJpY29ub3Njb25vIG5lbGxhIG5vc3RyYSB2b2xvbnQmYWdyYXZlOyBkaSBtaWdsaW9yYXJlIEFncmF0ZS48L3A+CjxwPkxhIGN1bHR1cmEgY3VsdHVyYSBhIGN1aSBjaSBpc3BpcmlhbW8gJmVncmF2ZTsgcXVlbGxhIGRlbGxhIHNvbGlkYXJpZXQmYWdyYXZlOywgZGVsbGEgdHJhc3BhcmVuemEsIGRlbGxhIHBhcnRlY2lwYXppb25lLCBkZWxsYSBzZW5zaWJpbGl0JmFncmF2ZTsgYW1iaWVudGFsZSBlIGRlbGxhIHRvbGxlcmFuemEuIFNpYW1vIGNvbnZpbnRpIGNoZSBpIGRpZmZlcmVudGkgYmFnYWdsaSBjdWx0dXJhbGkgZGkgY2lhc2N1bm8gZGkgbm9pIHNpYW5vIHVuYSByaWNjaGV6emEgZSBjaGUgbGF2b3JhcmUgaW5zaWVtZSBwZXIgaWwgYmVuZSBjb211bmUgZGViYmEgcHJldmFsZXJlIHN1aSBwZXJzb25hbGlzbWkgZSBzdWxsZSBkaWZmZXJlbnplIGN1bHR1cmFsaS48L3A+CjxwPkkgcHJvZ2V0dGkgYW1taW5pc3RyYXRpdmkgY2hlIGFiYmlhbW8gcG9ydGF0byBhdmFudGkgaGFubm8gYXZ1dG8gdW4gc29sbyBkZW5vbWluYXRvcmUgY29tdW5lOiBtaWdsaW9yYXJlIGxhIHF1YWxpdCZhZ3JhdmU7IGRlbGxhIHZpdGEgZGVpIG5vc3RyaSBjaXR0YWRpbmkgZSBxdWVzdG8gcmltYW5lIHR1dHRvcmEgaWwgbm9zdHJvIG9iaWV0dGl2byBwcmltYXJpbywgaWwgbW90b3JlIGNoZSBjaSBzcGluZ2UgbmVsIG5vc3RybyBpbXBlZ25vIGUgbGEgY2hpYXZlIGRpIGxldHR1cmEgZGVsIHByb2dyYW1tYSBjb24gY3VpIGNpIHByZXNlbnRpYW1vIGFnbGkgQWdyYXRlc2kuPC9wPgo8cD5WaXZpYmlsaXQmYWdyYXZlOyBjb21lIGZpbG8gY29uZHV0dG9yZSBzaWEgZGVpIHByb2dldHRpIHVyYmFuaXN0aWNpIGNoZSBkZWdsaSBpbnRlcnZlbnRpIHNvY2lvIGN1bHR1cmFsaSB0ZXNpIGEgcmVuZGVyZSBwaSZ1Z3JhdmU7IGZydWliaWxpIGdsaSBzcGF6aSBjdWx0dXJhbGkgZXNpc3RlbnRpIGUgYWQgYW1wbGlhcm5lIGwmcnNxdW87b2ZmZXJ0YSwgbWEgYW5jaGUgYXR0ZW56aW9uZSBhbCBsaXZlbGxvIGRlaSBzZXJ2aXppIG9mZmVydGkgYWwgY2l0dGFkaW5vIGUgY3VyYSBuZWxsYSBtYW51dGVuemlvbmUgZGVsIHBhdHJpbW9uaW8gZXNpc3RlbnRlLjwvcD4KPHA+PHN0cm9uZz5JbiBxdWVzdGkgYW5uaSBwZW5zaWFtbyBkaSBhdmVyIGRhdG8gdW4gY29udHJpYnVpdG8gaW1wb3J0YW50ZSBhbGxhIGNyZXNjaXRhIGRlbCBub3N0cm8gcGFlc2UgZSBjaSBwcm9wb25pYW1vIGRpIHByb3NlZ3VpcmUgc3VsbGEgc3RyYWRhIGRlbCBtaWdsaW9yYW1lbnRvIGNvbnRpbnVvIGNvbmZyb250YW5kb2NpIGNvbiBpIG51b3ZpIHByb2JsZW1pLCBsYXZvcmFuZG8gY29uIG9uZXN0JmFncmF2ZTssIHBhc3Npb25lLCBzZXJpZXQmYWdyYXZlOyBlIGd1YXJkYW5kbyBjb24gZmlkdWNpYSBhbCBmdXR1cm8gY2hlIGNpIGF0dGVuZGUuPC9zdHJvbmc+PC9wPg==\"}},\"175074\":{\"on\":true,\"name\":\"catalog\",\"title\":\"Candidati\",\"icon\":\"100210231-175074-icon.png\",\"order\":\"9\",\"image\":\"100210231-background.jpg\",\"data\":{\"cat_items\":[{\"image\":\"100210231-189579-ezio_colombo_135x150.jpg\",\"title\":\"Ezio Colombo\",\"description\":\"Ezio Colombo nato a \",\"content\":\"PHA+PGltZyBzcmM9Imh0dHA6Ly93d3cuaW5zaWVtZXBlcmFncmF0ZS5pdC93b3JkcHJlc3Mvd3AtY29udGVudC91cGxvYWRzLzIwMTIvMTAvRXppby1Db2xvbWJvLTEzNXgxNTAuanBnIiB3aWR0aD0iMTM1IiBoZWlnaHQ9IjE1MCIgYWx0PSJFemlvIENvbG9tYm8iIHRpdGxlPSJFemlvIENvbG9tYm8iIHN0eWxlPSJtYXJnaW46IDFweDsgYm9yZGVyOiAxcHggc29saWQgYmxhY2s7IiAvPjwvcD4=\"},{\"image\":\"100210231-189580-cl156x103_19_sironi_simone.jpg\",\"title\":\"Simone Sironi\",\"description\":\"Simone Sironi nato a il\",\"content\":\"PHA+PGltZyBzcmM9Imh0dHA6Ly93d3cuY29tdW5lLmFncmF0ZWJyaWFuemEubWIuaXQvdXBsb2FkL2ltbWFnaW5pL2ZvdG9fdmFyaWUvX3RodW1icy9DTDE1NngxMDNfMTlfU2lyb25pX1NpbW9uZS5qcGciIHdpZHRoPSIxMDMiIGhlaWdodD0iMTU1IiBhbHQ9IlNpbW9uZSIgdGl0bGU9IlNpcm9uaSIgc3R5bGU9Im1hcmdpbjogMXB4OyBib3JkZXI6IDFweCBzb2xpZCBibGFjazsiIC8+PC9wPg==\"}]}},\"175142\":{\"on\":true,\"name\":\"calendar\",\"title\":\"Calendario\",\"icon\":\"100210231-175142-icon.png\",\"order\":\"15\",\"image\":\"100210231-background.jpg\",\"data\":{\"calendar_feed\":\"https:\\\/\\\/www.google.com\\\/calendar\\\/ical\\\/fnkds1ipsagsli8rqe0n92fj4amja4h8%40import.calendar.google.com\\\/public\\\/basic.ics\"}},\"175047\":{\"on\":true,\"name\":\"map\",\"title\":\"Dove votare\",\"icon\":\"100210231-175047-icon.png\",\"order\":\"114\",\"image\":\"100210231-background.jpg\",\"data\":{\"map_url\":\"https:\\\/\\\/maps.google.com\\\/maps\\\/ms?msid=205164561758825926393.0004dcbf6031bcc05fc1e&msa=0&ll=45.5784,9.380345&spn=0.000757,0.001742\"}},\"175157\":{\"on\":true,\"name\":\"documents\",\"title\":\"Programma\",\"icon\":\"100210231-175157-icon.png\",\"order\":\"121\",\"image\":\"100210231-background.jpg\",\"data\":{\"documents\":[{\"file_url\":\"100210231-189684-lettera_ipa.pdf\",\"file_title\":\"Programma\",\"file_description\":\"Programma to be replaced\"}]}},\"175014\":{\"on\":true,\"name\":\"custom_content\",\"title\":\"Come Votare\",\"icon\":\"100210231-175014-icon.png\",\"order\":\"127\",\"image\":\"100210231-background.jpg\",\"data\":{\"custom_content\":\"\"}},\"175008\":{\"on\":true,\"name\":\"twitter\",\"title\":\"Twitter\",\"icon\":\"100210231-175008-icon.png\",\"order\":\"226\",\"image\":\"100210231-background.jpg\",\"data\":{\"twitter_feeds\":[\"Insieme_Agrate\"]}},\"175041\":{\"on\":true,\"name\":\"contacts\",\"title\":\"Contatti \",\"icon\":\"100210231-175041-icon.png\",\"order\":\"233\",\"image\":\"100210231-background.jpg\",\"data\":{\"contacts\":[{\"name\":\"Insieme per Agrate\",\"address\":\"via IV Novembre 15, 20086 Agrate Brianza MB\",\"phone\":\"\",\"email\":\"info@insiemeperagrate.it\"}]}},\"175044\":{\"on\":true,\"name\":\"websites\",\"title\":\"Website\",\"icon\":\"100210231-175044-icon.png\",\"order\":\"239\",\"image\":\"100210231-background.jpg\",\"data\":{\"web_links\":[{\"backgroundColor\":\"transparent\",\"color\":\"#000\",\"hasChild\":true,\"title\":\"Insieme per Agrate\",\"link\":\"http:\\\/\\\/www.insiemeperagrate.it\"}]}}}");
+				
+				function creategrid(){
+					$("#container").html('');
+					//add the modules in starting positions
+					$.each(pages, function(i, value) {
+						linkc = "modules/" + value.name.toLowerCase() + "/" + value.name + ".php?fid="+i;
+						if(preview==1)
+							linkc += "&preview=1"
+						imgc = "http://files.infinitemonkeys.mobi/userfiles/" + value.icon;
+						sectionc = value.title;
+						data_tb = '<div id="mod'+i+'" class="module"><a id="dis' + i + '" rel="external" href="' + linkc + '" class="ui-link"><img src="' + imgc + '"></a><div class="module_text">' + sectionc + '</div></div>';
+						$("#container").append(data_tb);
+					});
+					$("#container").append('<div id="frame"></div>');	//add the frame
+					$(".module_text").css("color", col_text);
+					
+					resizegrid();
+				}
+				
+				var grid_space_width;
+				var grid_space_height;
+				
+				function resizegrid() {
+					var container_width = $("#container").outerWidth();
+					var module_width = container_width / mods_across;
+					var text_height = module_width * 0.2;
+					var module_height = (container_width / mods_down)+text_height;
+					var grid_width = container_width - module_width;
+					var grid_height = (module_height * mods_down) - module_height;
+					grid_space_width = grid_width / (cols-1);
+					grid_space_height = grid_height / (rows-1);
+					
+					// window.console && console.log("container_width=" + container_width);
+					// window.console && console.log("module_width=" + module_width);
+					// window.console && console.log("grid_width=" + grid_width);
+					// window.console && console.log("grid_space_width=" + grid_space_width);
+					
+					
+					var positions = [];
+					var row = col = 0;
+					var pos = 1;
+					var divData = "";
+					$(".testbox").remove();
+					for( row = 0; row < rows; row++) {
+						for( col = 0; col < cols; col++, pos++) {
+							pos_top = row * grid_space_height;// + (grid_space_height / 2);
+							pos_left = col * grid_space_width;// + (grid_space_width / 2);
+			
+							positions[pos] = {
+								"top" : pos_top,
+								"left" : pos_left
+							};
+							
+							//testing only
+							// var box = "<div class='testbox' style='position:absolute; background-color:red; width:5px; height:5px; top:"+pos_top+"px; left:"+pos_left+"px'></div>";
+							// $("#container").append(box);
+						}
+					}
+			
+					$.each(pages, // $.each() looping on each Module
+					function(i, value) {
+						$("#mod"+i).css('top',positions[value.order].top);
+						$("#mod"+i).css('left',positions[value.order].left);
+					});
+					
+					//format some stuff
+					$(".module").width(module_width * icon_scale);
+					$(".module").height(module_height * icon_scale + text_height);
+					
+					$(".module_text").css("font-size", text_height * icon_scale);
+					$(".module img").css("width", module_width * 1 * icon_scale);
+			
+					resizeFrame();
+				}
+			
+				function resizeFrame() {
+					var padding = grid_space_width/2;
+					var tops = [];
+					var lefts = [];
+					var rights = [];
+					var bottoms = [];
+					$(".module").each(function() {
+						var m = $(this);
+						var pos = m.position();
+			
+						lefts.push(pos.left);
+						tops.push(pos.top);
+						var right = pos.left + m.outerWidth();
+						var bottom = pos.top + m.outerHeight();
+						rights.push(right);
+						bottoms.push(bottom);
+					});
+					lefts.sort(function(a, b) {
+						return a - b
+					})
+					tops.sort(function(a, b) {
+						return a - b
+					})
+			
+					rights.sort(function(a, b) {
+						return b - a
+					})
+					bottoms.sort(function(a, b) {
+						return b - a
+					})
+					
+					$("#frame").css("top", tops[0] - padding);
+					$("#frame").css("left", lefts[0]);
+					$("#frame").css("width", rights[0] - lefts[0]);
+					$("#frame").css("height", bottoms[0] - tops[0] + grid_space_height);
+					
+					var frame_col_string = "rgba("+hexToRGB(col_back)+","+bg_opacity+")";  //added by David Hoare for frame background formatting
+					$("#frame").css("background-color",frame_col_string);   //added by David Hoare for frame background formatting
+					
+					// window.console && console.log("height: " + document.documentElement.clientHeight + " - " + $("#container").offset().top+ " - " + $("#container").css("margin-top"));
+					
+					//adjust size for different browser functions
+					if(fixed_position_supported==true){	//most HTML5 browsers
+						$("#content").css("height",document.documentElement.clientHeight -33 + "px");	//works for small windows
+						// $("#content").css("background-size","100% " + (parseInt($("#content").outerHeight()) +35) + "px");	//works for small windows
+					}
+					else if(fixed_position_supported==false){	// iphone 4 and lower
+						$("#container").css("height",document.documentElement.clientHeight +12+ "px");
+					}
+					
+				}
+			
+				creategrid();
+				resizegrid();
+				
+				$(window).resize(function() {
+					resizegrid();
+				});
+				
+				//checks for updated data using update.js and does whatever actions are needed...
+				checkForNewData(pages);
+				
+				
+			});
+	    </script>
+    <script>function notifyScript() {     var evt = document.createEvent("Event");     evt.initEvent("notify", false, false);     if (document.getElementById("addthis-extension-script") == null) {        var d=document.createElement("div"); d.setAttribute("style", "display:none"); d.setAttribute("id", "addthis-extension-script");         if (window._ate)             d.textContent=_ate.pub();         else if(window.addthis_config && addthis_config.pubid)    d.textContent= addthis_config.pubid;        else if(window.addthis_config && addthis_config.username)    d.textContent= addthis_config.username;        else if(window.addthis_pub)    d.textContent= addthis_pub;        else             d.textContent="";         document.body.appendChild(d);     }    document.documentElement.dispatchEvent(evt); }notifyScript()</script></head>
+    <body style="" class="ui-mobile-viewport ui-overlay-c">
+    	<script type="text/javascript" src="./index_files/browser_function_tests.js"></script>
+        <div data-role="page" id="index" data-url="index" tabindex="0" class="ui-page ui-body-c ui-page-footer-fixed ui-page-active" style="padding-bottom: 34px; min-height: 872px;">
+            <div id="content" data-role="content" class="bg-home ui-content" style="padding: 0px; background-image: url(http://files.infinitemonkeys.mobi/userfiles/100210231-background.jpg); height: 873px;" role="main">
+	                <div id="header-index" class="ui-btn-corner-all">
+	                    <div><img src="./index_files/insieme_per_agrate_app-title.png" id="homeimage"></div>
+	                    <div id="homesubtitle" style="color: rgb(0, 0, 85);">Alleanza di Centrosinistra</div>
+	                </div>
+	                <div id="container"><div id="mod175008" class="module" style="top: 637.0559999999999px; left: 37.919999999999995px; width: 170.64px; height: 233.20799999999997px;"><a id="dis175008" rel="external" href="http://h.fanapp.mobi/modules/twitter/twitter.php?fid=175008" class="ui-link"><img src="./index_files/100210231-175008-icon.png" style="width: 170.64px;"></a><div class="module_text" style="color: rgb(0, 0, 0); font-size: 34.12799999999999px;">Twitter</div></div><div id="mod175011" class="module" style="top: 0px; left: 37.919999999999995px; width: 170.64px; height: 233.20799999999997px;"><a id="dis175011" rel="external" href="http://h.fanapp.mobi/modules/custom_content/custom_content.php?fid=175011" class="ui-link"><img src="./index_files/100210231-175011-moduleicon.jpg" style="width: 170.64px;"></a><div class="module_text" style="color: rgb(0, 0, 0); font-size: 34.12799999999999px;">Chi siamo</div></div><div id="mod175014" class="module" style="top: 318.52799999999996px; left: 530.8799999999999px; width: 170.64px; height: 233.20799999999997px;"><a id="dis175014" rel="external" href="http://h.fanapp.mobi/modules/custom_content/custom_content.php?fid=175014" class="ui-link"><img src="./index_files/100210231-175014-icon.png" style="width: 170.64px;"></a><div class="module_text" style="color: rgb(0, 0, 0); font-size: 34.12799999999999px;">Come Votare</div></div><div id="mod175041" class="module" style="top: 637.0559999999999px; left: 303.35999999999996px; width: 170.64px; height: 233.20799999999997px;"><a id="dis175041" rel="external" href="http://h.fanapp.mobi/modules/contacts/contacts.php?fid=175041" class="ui-link"><img src="./index_files/100210231-175041-icon.png" style="width: 170.64px;"></a><div class="module_text" style="color: rgb(0, 0, 0); font-size: 34.12799999999999px;">Contatti </div></div><div id="mod175044" class="module" style="top: 637.0559999999999px; left: 530.8799999999999px; width: 170.64px; height: 233.20799999999997px;"><a id="dis175044" rel="external" href="http://h.fanapp.mobi/modules/websites/websites.php?fid=175044" class="ui-link"><img src="./index_files/100210231-175044-icon.png" style="width: 170.64px;"></a><div class="module_text" style="color: rgb(0, 0, 0); font-size: 34.12799999999999px;">Website</div></div><div id="mod175047" class="module" style="top: 318.52799999999996px; left: 37.919999999999995px; width: 170.64px; height: 233.20799999999997px;"><a id="dis175047" rel="external" href="http://h.fanapp.mobi/modules/map/map.php?fid=175047" class="ui-link"><img src="./index_files/100210231-175047-icon.png" style="width: 170.64px;"></a><div class="module_text" style="color: rgb(0, 0, 0); font-size: 34.12799999999999px;">Dove votare</div></div><div id="mod175074" class="module" style="top: 0px; left: 303.35999999999996px; width: 170.64px; height: 233.20799999999997px;"><a id="dis175074" rel="external" href="http://h.fanapp.mobi/modules/catalog/catalog.php?fid=175074" class="ui-link"><img src="./index_files/100210231-175074-icon.png" style="width: 170.64px;"></a><div class="module_text" style="color: rgb(0, 0, 0); font-size: 34.12799999999999px;">Candidati</div></div><div id="mod175142" class="module" style="top: 0px; left: 530.8799999999999px; width: 170.64px; height: 233.20799999999997px;"><a id="dis175142" rel="external" href="http://h.fanapp.mobi/modules/calendar/calendar.php?fid=175142" class="ui-link"><img src="./index_files/100210231-175142-icon.png" style="width: 170.64px;"></a><div class="module_text" style="color: rgb(0, 0, 0); font-size: 34.12799999999999px;">Calendario</div></div><div id="mod175157" class="module" style="top: 318.52799999999996px; left: 303.35999999999996px; width: 170.64px; height: 233.20799999999997px;"><a id="dis175157" rel="external" href="http://h.fanapp.mobi/modules/documents/documents.php?fid=175157" class="ui-link"><img src="./index_files/100210231-175157-icon.png" style="width: 170.64px;"></a><div class="module_text" style="color: rgb(0, 0, 0); font-size: 34.12799999999999px;">Programma</div></div><div id="frame" style="top: -18.959999999999997px; left: 37px; width: 664px; height: 915.504px; background-color: rgba(253, 253, 253, 0.498039);"></div></div>
+	                
+<!--                 </div> -->
+            </div><!-- /content -->
+            <div data-role="footer" data-id="myfooter" id="footer" data-position="fixed" class="ui-footer ui-bar-a ui-footer-fixed slideup" role="contentinfo">
+                <a rel="external" class="various1 ui-btn ui-btn-up-a ui-shadow ui-btn-corner-all" href="http://h.fanapp.mobi/insieme_per_agrate_app#inline1" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="a"><span class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text">Menu</span></span></a>
+            </div><!-- /footer -->
+        </div><!-- /page -->
+        <!--Analytics code-->
+        <script src="./index_files/analytic_tracing.js"></script>
+        <!-- End Analytics Tracking Code -->
+        <div style="display: none;">
+    <div id="inline1">
+        <span style="color:black; font-size:16px; font-weight:bold;">Choose a Menu Option</span>
+
+        <ul style="text-align:center" class="dataList ui-listview ui-listview-inset ui-corner-all ui-shadow" id="list" data-inset="true" data-role="listview">
+            <li data-theme="c" class="ui-btn ui-btn-icon-right ui-li ui-corner-top ui-btn-up-c">
+                <div class="ui-btn-inner ui-li ui-corner-top">
+                    <div class="ui-btn-text">
+                        <a rel="external" href="http://h.fanapp.mobi/modules/messages/messages.php" class="ui-link-inherit"> <h1 class="rowTitle ui-li-heading">Messages Inbox</h1></a>
+                    </div>
+                </div>
+            </li>
+            <li data-theme="c" class="ui-btn ui-btn-icon-right ui-li ui-btn-up-c">
+                <div class="ui-btn-inner ui-li">
+                    <div class="ui-btn-text">
+                        <a rel="external" href="http://h.fanapp.mobi/modules/moreinfo/moreinfo.php" class="ui-link-inherit"> <h1 class="rowTitle ui-li-heading">More Info</h1></a>
+                    </div>
+                </div>
+            </li>
+            <li data-theme="c" class="ui-btn ui-btn-icon-right ui-li ui-btn-up-c">
+                <div class="ui-btn-inner ui-li">
+                    <div class="ui-btn-text">
+                        <a rel="external" id="recapp" target="_blank" href="http://apps.monk.ee/" class="ui-link-inherit"> <h1 class="rowTitle ui-li-heading">Other Apps</h1></a>
+                    </div>
+                </div>
+            </li>
+            <li data-theme="c" class="ui-btn ui-btn-icon-right ui-li ui-btn-up-c">
+                <div class="ui-btn-inner ui-li">
+                    <div class="ui-btn-text">
+                        <a rel="external" href="http://utils.infinitemonkeys.mobi/redirect/redirect.php?type=about&company=1&email=info@insiemeperagrate.it&appid=100210231" id="aboutlink" class="ui-link-inherit"> <h1 class="rowTitle ui-li-heading">About Us</h1></a>
+                    </div>
+                </div>
+            </li>
+            <li data-theme="c" class="ui-btn ui-btn-icon-right ui-li ui-btn-up-c">
+                <div class="ui-btn-inner ui-li">
+                    <div class="ui-btn-text">
+                        <a id="feedlink" rel="external" href="http://utils.infinitemonkeys.mobi/redirect/redirect.php?type=feedback&company=1" class="ui-link-inherit" target="_blank"> <h1 class="rowTitle ui-li-heading">Feedback</h1></a>
+                    </div>
+                </div>
+            </li>
+
+            <li data-theme="c" class="ui-btn ui-btn-icon-right ui-li ui-btn-up-c">
+                <div class="ui-btn-inner ui-li">
+                    <div class="ui-btn-text">
+                        <a id="helplink" rel="external" href="http://utils.infinitemonkeys.mobi/redirect/redirect.php?type=help&company=1" class="ui-link-inherit" target="_blank"> <h1 class="rowTitle ui-li-heading">Help</h1></a>
+                    </div>
+                </div>
+            </li>
+            <li data-theme="c" class="ui-btn ui-btn-icon-right ui-li ui-corner-bottom ui-btn-up-c">
+                <div class="ui-btn-inner ui-li ui-corner-bottom">
+                    <div class="ui-btn-text">
+                        <a rel="external" id="fmail" href="mailto:support@infinitemonkeys.mobi?subject=Check%20out%20this%20great%20app:%20http://fanapp.mobi/insieme_per_agrate_app" class="ui-link-inherit"> <h1 class="rowTitle ui-li-heading">Send to a Friend</h1></a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+    
+<div class="ui-loader ui-corner-all ui-body-a ui-loader-default"><span class="ui-icon ui-icon-loading"></span><h1>loading</h1></div><div style="display:none" id="addthis-extension-script"></div></body></html>
